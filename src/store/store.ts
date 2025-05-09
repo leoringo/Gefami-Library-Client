@@ -8,12 +8,14 @@ import globalLoadingReducer from "../views/loading/loadingSlice";
 import globalError from "../views/globalError/globalErrorSlice";
 import loginReducer from "../views/login/loginSlice";
 import homeReducer from "../views/home/homeSlice";
+import loanListReducer from "../views/loanList/loanListSlice";
 
 const reducer = {
   login: loginReducer,
   globalLoading: globalLoadingReducer,
   globalError: globalError,
   home: homeReducer,
+  loan: loanListReducer,
 };
 
 export const store = configureStore({

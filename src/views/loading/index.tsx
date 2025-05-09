@@ -4,7 +4,6 @@ import { selectIsLoading } from "./loadingSlice";
 
 const GlobalLoading = () => {
   const { isLoading } = useAppSelector(selectIsLoading);
-  console.log(isLoading, `<< isLoading`)
 
   return (
     <Backdrop

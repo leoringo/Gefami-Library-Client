@@ -36,7 +36,6 @@ export const executeLogin = createAsyncThunk<ILoginResponse, ILoginRequest>(
   async (payload, { rejectWithValue }) => {
     try {
       const response = await axiosLogin(payload);
-      // console.log(response, `<< response`);
 
       return response.data;
     } catch (err) {
